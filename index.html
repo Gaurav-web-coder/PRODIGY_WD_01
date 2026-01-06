@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gauravjeet Singh | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Gaurav</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#creative">Creative</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="floating-images">
+    <img src="images/profile.png" class="float profile-float" alt="Profile Photo">
+    <img src="images/song1.png" class="float song-float-1" alt="Song Poster">
+    <img src="images/song2.jpg" class="float song-float-2" alt="Song Poster">
+</div>
+
+    <div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+
+    <!-- HOME -->
+    <section id="home" class="section">
+        <h1 class="floating">
+            Hello, I'm <span>Gauravjeet Singh</span>
+        </h1>
+        <p>
+    I am a <span id="typing"></span>
+
+</p>
+<button class="resume-btn" onclick="openResume()">View Resume</button>
+
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science student with a strong foundation in C and C++
+            programming and a good understanding of Data Structures and Algorithms.
+            I also have basic frontend development skills using HTML, CSS, and
+            JavaScript. I developed a FarmTech website as an academic project,
+            gaining hands-on experience in real-world problem solving and
+            web development.
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="project">
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p>Computer Science Engineering</p>
+            <p><em>Currently Pursuing</em></p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li>C Programming</li>
+            <li>C++ Programming</li>
+            <li>Data Structures & Algorithms</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Problem Solving</li>
+            <li>GitHub (Basic)</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project floating">
+            <h3>FarmTech Website</h3>
+            <p>
+                Designed and developed a frontend-based FarmTech website for
+                farmers to explore fertilizers and pesticides. Focused on clean
+                UI design, structured layout, and basic interactivity.
+            </p>
+            <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <h2>Experience & Learning</h2>
+        <div class="project">
+            <ul>
+                <li>Practiced C and C++ programming for strong logic building.</li>
+                <li>Solved DSA problems involving arrays, stacks, queues, and trees.</li>
+                <li>Built mini frontend components such as forms and navigation bars.</li>
+                <li>Hands-on learning through academic and self-learning projects.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CREATIVE -->
+    <section id="creative" class="section">
+    <h2>Creative Presence</h2>
+
+    <div class="project floating">
+        <h3>Music Artist on Spotify</h3>
+        <p>
+            I release music on Spotify under the artist name
+            <strong>“Gaurav Hundl”</strong>.
+            This reflects my creativity, consistency, and digital presence.
+        </p>
+
+        <!-- Spotify Embed -->
+        <iframe
+            style="border-radius:12px; margin-top:20px;"
+            src="https://open.spotify.com/artist/0mWe9pMdvQ01shfMgM48ql?si=jPC5Z4stQEiavWMe0F15Mg"
+            width="100%"
+            height="200"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: gauravjeetsingh7@gmail.com</p>
+        <p>GitHub: github.com/gauravjeet</p>
+        <p>Spotify Artist: Gaurav Hundl</p>
+    </section>
+
+    <script src="script.js"></script>
+    <div id="resumeModal" class="resume-modal">
+    <div class="resume-glass">
+        <span class="close-btn" onclick="closeResume()">×</span>
+
+        <h2>Resume</h2>
+        <p><strong>Name:</strong> Gauravjeet Singh</p>
+        <p><strong>Role:</strong> Computer Science Student</p>
+        <p><strong>Skills:</strong> C, C++, DSA, HTML, CSS, JavaScript</p>
+        <p><strong>Project:</strong> FarmTech Website</p>
+        <p><strong>Creative:</strong> Spotify Artist – Gaurav Hundl</p>
+
+        <a href="resume.pdf" class="download-btn" download>
+            Download Resume (PDF)
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
